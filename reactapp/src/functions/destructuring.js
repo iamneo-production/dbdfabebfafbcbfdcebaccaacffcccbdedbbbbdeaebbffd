@@ -1,9 +1,9 @@
-function getUserIpDetails(userResponse={}) {
+function getUserIpDetails (userResponse = {}) {
     const { userName, userIp = '0.0.0.0' } = userResponse;
     return [userName, userIp]; 
 }
-function getTopThree(studentMarks=[]) {
-    const [s1 = null, s2 = null, s3 = null, ...rest] = studentMarks;
-    return [s1, s2, s3].sort();
+function getTopThree(studentMarks = []) {
+    const [first = null, second = null, third = null, ...rest] = studentMarks;
+    return [first, second, ].sort();
 }
 export {getUserIpDetails, getTopThree}
